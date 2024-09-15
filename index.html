@@ -16,7 +16,7 @@
 <link rel="icon" type="image/x-icon" href="https://malasid.github.io/favicon.png">
 <meta name="description" content="HTML Bucin Malas.id">
 <!-- 
-  Made with love by Rayys!
+  Made with love by Jawsyan!
   
      Blog: https://PalingIT.com
      Instagram: @rayyarrr
@@ -40,7 +40,7 @@
      <div id="kadoIn">
        <!-- Tombol Surat --><img src="https://feeldreams.github.io/kadoin.png"/>
      </div>
-     <p id="ket">Klik Kadonya!</p>
+     <p id="ket">! انقر على الهدية</p>
 
      <div class="kumpulanstiker">
          <!-- Stiker untuk Konten -->
@@ -57,9 +57,9 @@
      <p id="halo" class="halo"></p>
      
      <div><blockquote id='bq' data-text='㋡'>
-       <p id="kalimat">Aku Ada Sesuatu Nih 🤣❤️</p>
+       <p id="kalimat">لدي شيء هنا 🤣❤️</p>
 
-       <p id="pesan1">Klik 4 LOVE di Bawah! 😆❤️</p>
+       <p id="pesan1">انقر فوق 4 الحب أدناه 😆❤️</p>
        <div id="kolombaru">
          <li id="lv1">🤍</li>
          <li id="lv2">🤍</li>
@@ -69,30 +69,30 @@
 
        <p id="pesan2">Tunggu...</p>
        <!-- Pesan -->
-       <p id="pesan3">Ciee.. Ada yang Ultah Nih 🤣❤️</p>
-       <p id="pesan4">Happy Birthday, </p>
-       <p id="pesan5" class="gaya2">Nambah tua aja ya, hehe</p>
-       <p id="pesan6" class="gaya2">Moga panjang umur biar tiap tahun bisa traktirin aku wkwk 😆❤️</p>
-       <p id="pesan7" class="gaya2">Sehat selalu ya!</p>
+       <p id="pesan3">🤣❤️ هناك شيء أجمل هنا </p>
+       <p id="pesan4">تهانينا على الاستفادة القصوى من هذا اليوم</p>
+       <p id="pesan5" class="gaya2">أشكرك على اهتمامك بي طوال هذا الوقت</p>
+       <p id="pesan6" class="gaya2">😆❤️ أتمنى أن أعيش طويلاً حتى أتمكن كل عام من تذكير بعضنا البعض </p>
+       <p id="pesan7" class="gaya2">كن صحيًا دائمًا</p>
 
-       <p id="pesan8" class="gaya2">Canda wkwwk :v</p>
-       <p id="pesan9" class="gaya2">Oh iya, semoga di hari spesialmu ini kamu dapat menjadi pribadi yang lebih baik yaa.. 🥳❤️</p>
-       <p id="pesan10" class="gaya2">Happy Level Up Day!! 🥳</p>
+       <p id="pesan8" class="gaya2">أعني أن رائحتك كرائحة نساء الجنة</p>
+       <p id="pesan9" class="gaya2">أوه نعم، آمل أن تكون غدًا وفي المستقبل شخصًا أفضل... ❤️</p>
+       <p id="pesan10" class="gaya2">❤️😁لا تنسي أن تبتسمي وتكوني سعيدة إذا كانت لديك مشكلة فقط اتصلي بي إن شاء الله يمكنني المساعدة</p>
 
        <!-- Tombol Lanjut -->
-       <p id="opsL">Klik untuk Lanjut</p>
+       <p id="opsL">انقر للاستمرار</p>
      </blockquote></div>
 
      <!-- Tombol Kirim Pesan -->
-     <div id="Tombol"><a id="By">&#128140; Lanjut</a></div>
+     <div id="Tombol"><a id="By">&#128140; تابع</a></div>
 
      <!-- Pesan Tambahan -->
-     <p id="katatambahan" class="sembunyi">Gajadi deh soalnya kamu bau wleee 😜</p>
+     <p id="katatambahan" class="sembunyi"😜 ليست رائحتك كريهة هاها ولكنها كذبة </p>
      
      <!-- Pesan Ditolak -->
      <div id="pesanditolak">
        <img id="stikerditolak" src="https://feeldreams.github.io/weee.gif"/>
-       <p id="kataditolak">Yaudah kalo gamau mh 😜</p>
+       <p id="kataditolak">😜 لا بأس إذا كنت لا تريد ذلك</p>
      </div>
 
    </div>
@@ -104,24 +104,24 @@
   
   async function inipesan(){
     var { value: nama } = await swals.fire({
-           title: 'Masukin Nama Kamu', input: 'text',
+           title: 'أدخل اسمك', input: 'text',
        });
        if(nama && nama.length < 11){
          window.nama = nama;
-         vketikhalo="Hai, " + nama + " ✨";
+         vketikhalo="أهلا" + nama + " ✨جميلة";
          mulainama();
          } else {
-           await swals.fire('Ups!', 'Nama tidak boleh kosong atau lebih dari 10 karakter, ya!');inipesan();
+           await swals.fire('عفوًا', 'لا يمكن أن يكون الاسم فارغًا أو أطول من 10 أحرف');inipesan();
     }
   }
 
   //Variable Pertanyaan Akhir
-  var tanya = 'Mau Kado Gak Nih? 😶❤️';
-  var opstanya = 'Ayo jawab 😆';
-  var tompositif = 'Mau';
-  var tomnegatif = 'Engga';
+  var tanya = 'هل تريد هدية؟ 😶❤️';
+  var opstanya = 'هيّا أجب 😆';
+  var tompositif = 'تريدها';
+  var tomnegatif = 'لا تريدها';
     
-    async function menuju(){pesanwhatsapp = "Makasii udah ngucapin " + nama + " ultah ><";await swals.fire('OK!', 'Kirim jawabannya ke WhatsApp aku, ya!', 'success');window.location = "https://api.whatsapp.com/send/?phone=%2B62823482324=&text=" + pesanwhatsapp;}
+    async function menuju(){pesanwhatsapp = "شكراً لقولك " + nama + " ultah ><";await swals.fire('OK!', 'أرسل إجاباتك إلى واتسابي أو على إنستغرام', 'success');window.location = "https://api.whatsapp.com/send/?phone=%2B628111541514=&text=" + pesanwhatsapp;}
 </script>
 <script src="https://malasid.github.io/html/hbd.js"></script>
 <!-- Sampai Sini -->
